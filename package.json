@@ -1,0 +1,19 @@
+{
+  "name": "apache-2.0",
+  "description": "Plaintext of the Creative Commons Attribution 4.0 International (CC-BY-4.0) License from www.blog.creativecommons.org",
+  "version": "0.0.0",
+  "files": [
+    "README.md",
+    "CC-BY-4.0",
+    "package.json"
+  ],
+  "keywords": [
+    "jslicense",
+    "license"
+  ],
+  "main": "CC-BY-4.0.json",
+  "repository": "jslicense/CC-BY-4.0",
+  "scripts": {
+    "prepublish": "node -e \"process.stdout.write(JSON.stringify(require('fs').readFileSync('CC-BY-4.0').toString()))\" > CC-BY-4.0.json"
+  }
+}
